@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Hello, CI/CD is working!"
-      - run: ls -la
+      - name: Run my Python script
+        run: python hello.py
